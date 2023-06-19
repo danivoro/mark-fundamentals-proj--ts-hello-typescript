@@ -154,7 +154,7 @@ Handily:
 - running `yarn` will install `ts-node` (downloading it into `node-modules`), since `ts-node` is listed under our `devDependencies` in `package.json`
 - we have a convenient `start:ts` script in our `package.json`
 
-> ⚠️ Before, we found that we could run JavaScript files directly in the terminal with `node path/to/dir/file.js`, and we used our `package.json` scripts as a convenience helper. However, you will probably find that your `ts-node` script works when run via `yarn`, but not when typed directly into the terminal. This is fine, and expected - your `package.json` scripts looks up a locally installed `ts-node` inside `node_modules`, whereas `ts-node` directly in the terminal looks for a global installation. If you'd like to be able to run `ts-node` directly within the terminal, you can make a global installation with `yarn global add ts-node`.
+> ⚠️ Before, we found that we could run JavaScript files directly in the terminal with `node path/to/dir/file.js`, and we used our `package.json` scripts as a convenience helper. However, you will probably find that your `ts-node` script works when run via `yarn`, but not when typed directly into the terminal. This is fine, and expected - your `package.json` scripts looks up a locally installed `ts-node` inside `node_modules`, whereas `ts-node` directly in the terminal looks for a global installation. If you'd like to be able to run `ts-node` directly within the terminal, you could make a global installation with `yarn global add ts-node`.  This is NOT recommended.
 
 So let's try to run this TypeScript file with `yarn start:ts`.
 
@@ -273,7 +273,7 @@ We will trigger a build of our TypeScript code using the following script (defin
 yarn compile
 ```
 
-> ⚠️ The `compile` script simply runs `tsc`, a command given to us by a `typescript` installation. Similarly to `ts-node`, it currently looks up a local installation of `typescript` in your `node_modules`. If you'd like to be able to run `tsc` directly in your terminal, you'll need a global installation of `typescript`: `yarn global add typescript`
+> ⚠️ The `compile` script simply runs `tsc`, a command given to us by a `typescript` installation. Similarly to `ts-node`, it currently looks up a local installation of `typescript` in your `node_modules`. If you'd like to be able to run `tsc` directly in your terminal, you'd need a global installation of `typescript`: `yarn global add typescript`.  We recommend you do NOT do this.
 
 After you run this, you should see a `build` folder appear, with the following file, `index.js`, which is ordinary JavaScript.
 
