@@ -118,7 +118,7 @@ What we wanted was `const area = rectangle.width * rectangle.height` - and we ma
 
 > 🎯 **Success criterion:** you can articulate some benefits of TypeScript
 
-### Background to TypeScript
+### Background to TypeScript
 
 TypeScript irons out some of the quirks of JavaScript by keeping _all_ JavaScript syntax (but adding in some extra rules and syntax).
 
@@ -307,7 +307,7 @@ yarn compile
 yarn start:build
 ```
 
-### Optional aside: target JS version
+### Optional aside: target JS version
 
 We wouldn't typically read the compiled code, but if you look at it, you'll see it looks (for the most part) very similar to the JavaScript code we have in `src/javascript/index.js`.
 
